@@ -1,0 +1,37 @@
+@tailwind components;
+@tailwind utilities;
+
+.backgroundGrad{
+    background: repeating-radial-gradient(rgba(102, 98, 140, 0.971) 1px, #111827 5px, #111827 98px);
+    
+}
+
+
+
+.circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 10px 100px, #184372, #150025);
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    margin: 0;
+  }
+  
+.circle::before {
+    content: "";
+    position: absolute;
+  }
+.circleRest {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 10px 100px, #69add7, #150025);
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    margin: 0;
+  }
