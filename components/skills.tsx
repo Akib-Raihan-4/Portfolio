@@ -4,7 +4,13 @@ import SectionHeading from './section-heading'
 import styles from './skills.module.css'
 import { motion } from 'framer-motion'
 
-const Skill = ({nam, x, y}) => {
+interface SkillProps {
+    nam: any; 
+    x: any;   
+    y: any;   
+  }
+
+  const Skill: React.FC<SkillProps> = ({ nam, x, y }) =>{
     return(
         <motion.div className={`${styles.circleRest} font-semibold  text-white p-8  cursor-pointer`}
         whileHover={{scale:1.25}}

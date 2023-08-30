@@ -15,7 +15,7 @@ export default function Intro() {
     const [shouldGrowShadow, setShouldGrowShadow] = useState(false);
 
     useEffect(() => {
-        let timeoutId;
+        let timeoutId: any;
 
         if (shouldGrowShadow) {
             // Delay the shadow growth after 500 milliseconds (0.5 seconds)
@@ -60,7 +60,7 @@ export default function Intro() {
                     <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-gray-200'
                     initial={{opacity:0, y:100}}
                     animate={{opacity:1, y:0}}>
-                        <span className="font-bold">Hello World, I'm Akib Raihan.</span> I'm interested in{" "}
+                        <span className="font-bold">Hello World, I am Akib Raihan.</span> I am interested in{" "}
                         <span className="font-bold">full-stack web development</span> 
                          . I enjoy building <span className="italic">sites & apps</span>. My focus is{" "}<span className="underline">React (Next.js)</span>.
                     </motion.p>
