@@ -5,6 +5,7 @@ import Header from '@/components/header'
 import Intro from '@/components/intro'
 import { Cabin_Sketch } from 'next/font/google'
 import Image from 'next/image'
+import styles from './body.module.css'
 
 const cabin = Cabin_Sketch({
     weight:['700', '400'],
@@ -26,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className={`${inter.className}
+      <body className={`${inter.className} 
       bg-gray-900 text-gray-950 relative h-[1000rem] pt-28 sm:pt-36 w-full`}>
 
         {/* <div className='bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem]

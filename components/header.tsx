@@ -18,13 +18,36 @@ const variants = {
 
 const MobileNav = () => {
     const [mobileNav, setMobileNav] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
 	const toggleMobileNav = () => {
-		setMobileNav(!mobileNav);
+		if (mobileNav) {
+            // Restore the scroll position and enable scrolling
+            window.scrollTo(0, scrollPosition);
+            document.body.style.overflow = 'auto';
+          } else {
+            // Disable scrolling and store the current scroll position
+            setScrollPosition(window.scrollY);
+            document.body.style.overflow = 'hidden';
+          }
+          setMobileNav(!mobileNav);
 	};
     const closeMobileNav = () => {
+        if (mobileNav) {
+            // Restore the scroll position and enable scrolling
+            window.scrollTo(0, scrollPosition);
+            document.body.style.overflow = 'auto';
+          } else {
+            // Disable scrolling and store the current scroll position
+            setScrollPosition(window.scrollY);
+            document.body.style.overflow = 'hidden';
+          }
         setMobileNav(false);
-      };
+    };
+
+    
+
+
     return (
 		<header className="fixed top-0 inset-x-0 p-6 bg-gray-800/40 ">
 			<nav className="pl-[20rem]">
@@ -103,7 +126,7 @@ const MobileNav = () => {
 								initial="hide"
 								animate="show"
 								exit="hide"
-								className="fixed inset-0 bg-gray-800  flex flex-col pt-[5rem]  space-y-10 lg:hidden"
+								className="fixed inset-0 bg-gray-800  flex flex-col pt-[5rem] space-y-10 lg:hidden overflow-hidden"
 							>
 								<motion.ul
 									variants={{
