@@ -52,7 +52,7 @@ const MobileSkills = () => {
               className="bg-gray-900  rounded-full p-4  text-center relative"
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.2 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
             >
               <div className="w-40 h-40 bg-gray-900 rounded-full">
                 <div className={`${styles.ball} ${styles.bubble} pt-12`}>
