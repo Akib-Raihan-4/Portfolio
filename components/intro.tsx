@@ -6,54 +6,34 @@ import {BsArrowRight} from "react-icons/bs"
 import {HiDownload} from "react-icons/hi"
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 
 
 const MotionLink = motion(Link)
 
 
 export default function Intro() {
-    const [shouldGrowShadow, setShouldGrowShadow] = useState(false);
-
-    useEffect(() => {
-        let timeoutId: any;
-
-        if (shouldGrowShadow) {
-            // Delay the shadow growth after 500 milliseconds (0.5 seconds)
-            timeoutId = setTimeout(() => {
-                setShouldGrowShadow(false); // Reset shouldGrowShadow after the delay
-            }, 500);
-        }
-
-        return () => clearTimeout(timeoutId);
-    }, [shouldGrowShadow]);
-
     
 
     return (
         <section className='mb-28 sm:max-w-[80rem] text-center sm:mb-0 scroll-mt-[100rem] flex' id='home'>
             <div className='flex sm:flex-row flex-col-reverse justify-center items-center'>
-                <div className='w-full sm:w-[50%]  py-8 sm:py-0'>
+                <div className='w-full sm:w-[50%]  py-8 sm:py-0 flex justify-center'>
                     <motion.img
                         alt='Image'
                         src="/IntroPic.png"
                         width={400}
                         height={266}
-                        className="z-10 object-cover object-center rounded-lg shadow-xl"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        className="z-10 object-cover object-center rounded-lg shadow-xl w-[300px] h-[450px] sm:h-[566px] sm:w-[450px]"
                         whileHover={{
                             opacity: 1,
                             scale: 1.05,
-                            rotateX: [10,-10],
+                            rotateX: [10, -10],
                             rotateY: 25,
-                            boxShadow: shouldGrowShadow
-                                ? "0px 20px 40px rgb(254 243 199, 0.4)"
-                                : "0px 10px 20px rgb(254 243 199, 0.2)",
-                            transition:{duration:2}
+                            boxShadow: "0px 20px 40px rgba(254, 243, 199, 0.4)",
+                            transition: { duration: 2 }
                         }}
                         transition={{ duration: 1 }}
-                        onMouseEnter={() => setShouldGrowShadow(true)}
-                        onMouseLeave={() => setShouldGrowShadow(true)}
                     />
                 </div>
                 <div className='sm:max-w-[50%] flex flex-col justify-center item-center'>
