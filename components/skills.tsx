@@ -98,7 +98,6 @@ const DesktopSkills = () => {
             <Skill nam="Django" x="473px" y="250px"/>
             <Skill nam="C++" x="-187px" y="-410px"/>
         </div>
-
   )
 }
 
