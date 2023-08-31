@@ -104,24 +104,28 @@ const DesktopSkills = () => {
 
 
 export const Skills = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 1260);
+  const [isMobile, setIsMobile] = useState<boolean>(
+    typeof window !== 'undefined' && window.innerWidth <= 1260
+  );
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 1260);
+  };
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1260);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [window.innerWidth]);
+    if (typeof window !== 'undefined') {
+      handleResize(); 
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   return (
     <section className='mb-28 max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
         <SectionHeading>Skills</SectionHeading>
         {isMobile ? <MobileSkills /> : <DesktopSkills />}
-        
         
         
     </section>
