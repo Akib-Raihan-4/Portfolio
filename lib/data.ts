@@ -100,6 +100,7 @@ export const projectsData = [
       "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
     tags: ["Python", "MediaPipe", "OpenCV"],
     imageUrl: Selfie,
+    href: "https://github.com/Akib-Raihan-4/Taking-Picture-Using-MediaPipe/tree/main"
   },
   {
     title: "DevTech",

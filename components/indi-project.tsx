@@ -24,6 +24,7 @@ export default function Project({
                     <Image src={imageUrl} alt={title} quality={95} className={`${styles.img}`}/>
                 </div>
                 <div className={`${styles.content}`}>
+                    <a href=""></a>
                     <h2 className='font-extrabold text-[#220824] pb-3'>{title}</h2>
                     <p className='font-semibold text-[#0e0b31]'>{description}</p>
                     <ul className="flex flex-wrap pt-8 gap-2 sm:mt-auto">

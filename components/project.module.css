@@ -22,7 +22,7 @@
 }
 @media (max-width: 768px){
     .container .card:hover{
-        height: 500px;
+        height: fit-content;
     }
 }
 
