@@ -24,8 +24,18 @@ export default function Project({
                     <Image src={imageUrl} alt={title} quality={95} className={`${styles.img}`}/>
                 </div>
                 <div className={`${styles.content}`}>
-                    <h2>{title}</h2>
-                    <p>{description}</p>
+                    <h2 className='font-extrabold text-[#220824] pb-3'>{title}</h2>
+                    <p className='font-semibold text-[#0e0b31]'>{description}</p>
+                    <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                        {tags.map((tag, index) => (
+                        <li
+                            className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                            key={index}
+                        >
+                            {tag}
+                        </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
