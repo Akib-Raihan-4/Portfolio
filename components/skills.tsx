@@ -5,7 +5,6 @@ import SectionHeading from './section-heading'
 import styles from './skills.module.css'
 import { motion } from 'framer-motion'
 
-
 interface SkillProps {
     nam: any; 
     x: any;   

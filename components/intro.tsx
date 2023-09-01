@@ -24,7 +24,7 @@ export default function Intro() {
                         src="/IntroPic.png"
                         width={400}
                         height={266}
-                        className="z-10 object-cover object-center rounded-lg shadow-xl w-[300px] h-[450px] sm:h-[566px] sm:w-[400px]"
+                        className={`z-10 object-cover object-center rounded-lg shadow-xl w-[300px] h-[450px] sm:h-[566px] sm:w-[400px]`}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         whileHover={{
@@ -32,7 +32,7 @@ export default function Intro() {
                             scale: 1.05,
                             rotateX: [10, -10],
                             rotateY: 25,
-                            boxShadow: "0px 20px 40px rgba(254, 243, 199, 0.4)",
+                            boxShadow: "-30px 15px 10px rgba(0, 0, 0, 0.74)",
                             transition: { duration: 2 }
                         }}
                         transition={{ duration: 1 }}

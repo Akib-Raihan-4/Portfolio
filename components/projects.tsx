@@ -10,17 +10,12 @@ export default function Projects() {
         <SectionHeading>
            my projects
         </SectionHeading>
-
-        <div>
-            {
-                
-                projectsData.map((project, index) => (
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 pt-[7rem]">
+            {projectsData.map((project, index) => (
                     <React.Fragment key={index}>
                         <Project {...project} />
                     </React.Fragment>
-                    
-                ))
-            }
+            ))}
         </div>
     </section>
   )
