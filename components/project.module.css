@@ -17,7 +17,13 @@
 }
 
 .container .card:hover{
-    height: 520px;
+    height: 500px;
+    transition: 0.8s ease-in-out;
+}
+@media (max-width: 768px){
+    .container .card:hover{
+        height: 500px;
+    }
 }
 
 
@@ -44,7 +50,12 @@
     border-radius: 4px;
     width: 25rem;
     height: 250px;
-    object-fit: cover;
+   
+}
+.container .card .imgBx .img:hover{
+    scale: 1.05;
+    box-shadow:  -10px 20px 5px rgba(0, 0, 0, 0.65);
+    transition: 0.75s ease-in-out
 }
 
 .container .card .content{

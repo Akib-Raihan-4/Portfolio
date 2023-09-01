@@ -7,6 +7,7 @@ import Potato from "@/public/PotatoDisease.png"
 import Attendance from "@/public/Attendance.png"
 import Weather from "@/public/Weather.png"
 import Selfie from "@/public/MediaPic.png"
+import DevTech from "@/public/DevTech.png"
 
 export const links = [
   {
@@ -69,36 +70,43 @@ export const projectsData = [
     title: "Edu Chatbot",
     description:
       "EduBot is an AI-powered chatbot designed to provide instant and accurate responses to university student queries.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["Python", "NLP", "NLTK ", "Keras", "Flask", "TensorFlow", "React"],
     imageUrl: EduBot,
   },
   {
-    title: "rmtDev",
+    title: "Potato Plant Disease Detection",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Potato Plant Disease Detection is a project aimed at detecting two major diseases in potato plants, namely Early Blight, Late Blight, and Healthy plants.",
+    tags: ["Python", "CNN","Keras", "React","TensorFlow", "FastApi", "OpenCV" ],
     imageUrl: Potato,
   },
   {
-    title: "Word Analytics",
+    title: "Face Recognition Attendance",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "The Face Recognition Attendance System is a Python application that utilizes real-time face recognition to automate attendance tracking.",
+    tags: ["Python", "Tkinter", "OpenCV", "Pyinstaller", "Face-Recognition"],
     imageUrl: Attendance,
   },
   {
-    title: "Word Analytics",
+    title: "Weather App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A simple Weather app that also shows the next 3 days' forecast. In this project I have use HTML, CSS and JS and also used a weather API.",
+    tags: ["JavaScript", "HTML", "CSS"],
     imageUrl: Weather,
   },
   {
-    title: "Word Analytics",
+    title: "Taking Picture with Hand Gesture",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
+    tags: ["Python", "MediaPipe", "OpenCV"],
     imageUrl: Selfie,
+  },
+  {
+    title: "DevTech",
+    description:
+      "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
+    tags: ["PHP", "TailwindCSS", "HTML", "CSS", "MySQL"],
+    imageUrl: DevTech,
   },
 ] as const;
 

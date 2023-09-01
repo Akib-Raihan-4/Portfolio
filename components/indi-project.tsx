@@ -26,10 +26,10 @@ export default function Project({
                 <div className={`${styles.content}`}>
                     <h2 className='font-extrabold text-[#220824] pb-3'>{title}</h2>
                     <p className='font-semibold text-[#0e0b31]'>{description}</p>
-                    <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                    <ul className="flex flex-wrap pt-8 gap-2 sm:mt-auto">
                         {tags.map((tag, index) => (
                         <li
-                            className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                            className="bg-gray-900 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                             key={index}
                         >
                             {tag}
