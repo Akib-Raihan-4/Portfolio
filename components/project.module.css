@@ -7,7 +7,7 @@
     position: relative;
     max-width: 27rem;
     height: 210px;
-    background: #fff;
+    background: #69657aba;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
@@ -16,16 +16,28 @@
     transition: 0.3s ease-in-out;
 }
 
-.container .card:hover{
+.card:hover{
     height: 500px;
     transition: 0.8s ease-in-out;
 }
-@media (max-width: 768px){
+@media (max-width: 1280px){
     .container .card:hover{
         height: fit-content;
     }
 }
 
+.cards{
+    position: relative;
+    max-width: 27rem;
+    height: 22000px;
+    background: #69657aba;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 20px 5px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-in-out;
+}
 
 .container .card .imgBx{
     position: relative;
@@ -75,3 +87,4 @@
     margin-top: -40px;
     transition-delay: 0.3s;
 }
+
