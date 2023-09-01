@@ -71,6 +71,7 @@ export const projectsData = [
     description:
       "EduBot is an AI-powered chatbot designed to provide instant and accurate responses to university student queries.",
     tags: ["Python", "NLP", "NLTK ", "Keras", "Flask", "TensorFlow", "React"],
+    href: "https://github.com/Akib-Raihan-4/EduBot",
     imageUrl: EduBot,
   },
   {
@@ -78,6 +79,7 @@ export const projectsData = [
     description:
       "Potato Plant Disease Detection is a project aimed at detecting two major diseases in potato plants, namely Early Blight, Late Blight, and Healthy plants.",
     tags: ["Python", "CNN","Keras", "React","TensorFlow", "FastApi", "OpenCV" ],
+    href: "https://github.com/Akib-Raihan-4/Potato_disease_prediction",
     imageUrl: Potato,
   },
   {
@@ -85,6 +87,7 @@ export const projectsData = [
     description:
       "The Face Recognition Attendance System is a Python application that utilizes real-time face recognition to automate attendance tracking.",
     tags: ["Python", "Tkinter", "OpenCV", "Pyinstaller", "Face-Recognition"],
+    href: "https://github.com/Akib-Raihan-4/Face_Recognition_Attendance",
     imageUrl: Attendance,
   },
   {
@@ -92,6 +95,7 @@ export const projectsData = [
     description:
       "A simple Weather app that also shows the next 3 days' forecast. In this project I have use HTML, CSS and JS and also used a weather API.",
     tags: ["JavaScript", "HTML", "CSS"],
+    href: "https://github.com/Akib-Raihan-4/Simple-Weather-App",
     imageUrl: Weather,
   },
   {
@@ -100,13 +104,14 @@ export const projectsData = [
       "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
     tags: ["Python", "MediaPipe", "OpenCV"],
     imageUrl: Selfie,
-    href: "https://github.com/Akib-Raihan-4/Taking-Picture-Using-MediaPipe/tree/main"
+    href: "https://github.com/Akib-Raihan-4/Taking-Picture-Using-MediaPipe"
   },
   {
     title: "DevTech",
     description:
       "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
     tags: ["PHP", "TailwindCSS", "HTML", "CSS", "MySQL"],
+    href: "https://github.com/Akib-RaihanPop/DevTech.github.io",
     imageUrl: DevTech,
   },
 ] as const;
