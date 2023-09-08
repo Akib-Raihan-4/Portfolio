@@ -43,8 +43,8 @@ const skills = [
 
 const MobileSkills = () => {
   return (
-    <div className="bg-gray-900 py-12 ">
-      <div>
+      <div py-12>
+        <div className='pt-[4rem]'></div>
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
           {skills.map((skill, index) => (
             <motion.div
@@ -66,9 +66,7 @@ const MobileSkills = () => {
           ))}
         </div>
       </div>
-    </div>
   );
-
 }
  
 
@@ -123,7 +121,9 @@ export const Skills = () => {
 
   return (
     <section className='mb-28 max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
+        <div className='pt-[6rem] sm:pt-0 '></div>
         <SectionHeading>Skills</SectionHeading>
+        <div className='sm:pb-[6rem] '></div>
         {isMobile ? <MobileSkills /> : <DesktopSkills />}
         
         

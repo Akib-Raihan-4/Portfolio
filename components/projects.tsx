@@ -6,7 +6,7 @@ import Project from './indi-project'
 
 export default function Projects() {
   return (
-    <section className='mt-5 scroll-mt-28' id='projects'>
+    <section className='mt-5 max-w-[80rem] scroll-mt-28' id='projects'>
         <SectionHeading>
            my projects
         </SectionHeading>
