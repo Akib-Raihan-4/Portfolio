@@ -21,10 +21,13 @@
     transition: 0.8s ease-in-out;
 }
 @media (max-width: 1280px){
-    .container .card:hover{
+    .container .card{
         height: fit-content;
     }
+    
 }
+
+
 
 .cards{
     position: relative;
@@ -91,3 +94,10 @@
 
 
 
+.mobileContent{
+    position: relative;
+    margin-top: -40px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+}
