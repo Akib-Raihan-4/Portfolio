@@ -37,6 +37,13 @@
 
 
 
+.skillContent{
+  font-size:40px;
+  font-weight: bolder;
+  color: #96b1c9;
+}
+
+
 
 .ball {
   display: inline-block;

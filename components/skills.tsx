@@ -39,25 +39,25 @@ const skills = [
   'Django',
 ];
 
+
+//Mobile View
+
 const MobileSkills = () => {
   return (
     <div className="py-12">
       <div className="flex justify-center">
         <div className="w-80 flex overflow-x-auto py-4 overflow-hidden scrollbar-hide">
           {skills.map((skill, index) => (
-            <motion.div
+            <div
               key={index}
               className="bg-gray-900 rounded-full  text-center m-2"
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
             >
               <div className="w-80 h-80 bg-gray-900 rounded-full">
                 <div className={`${styles.ball} ${styles.bubble} pt-12`}>
-                  <div className={`${styles.skillcontent} pt-14`}>{skill}</div>
+                  <div className={`${styles.skillContent} pt-14`}>{skill}</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -67,7 +67,7 @@ const MobileSkills = () => {
 
 
 
-
+// Desktop View 
 
 const DesktopSkills = () => {
 
