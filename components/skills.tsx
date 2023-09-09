@@ -43,32 +43,31 @@ const skills = [
 
 const MobileSkills = () => {
   return (
-      <div py-12>
-        <div className='pt-[4rem]'></div>
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+    <div className="py-12">
+      <div className="flex justify-center">
+        <div className="w-80 flex overflow-x-auto py-4 overflow-hidden">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-gray-900  rounded-full p-4  text-center relative"
+              className="bg-gray-900 rounded-full  text-center m-2"
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              <div className="w-40 h-40 bg-gray-900 rounded-full">
+              <div className="w-80 h-80 bg-gray-900 rounded-full">
                 <div className={`${styles.ball} ${styles.bubble} pt-12`}>
-                  <div className=' text-[#2a293c] p-4 font-extrabold'>
-                    {skill}
-                  </div>
+                  <div className={`${styles.skillcontent} pt-14`}>{skill}</div>
                 </div>
               </div>
-             
             </motion.div>
           ))}
         </div>
       </div>
+    </div>
   );
-}
- 
+};
+
+
 
 
 

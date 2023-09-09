@@ -6,7 +6,7 @@
 .container .card{
     position: relative;
     max-width: 27rem;
-    height: 210px;
+    height: 230px;
     background: #4b5563;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -20,14 +20,12 @@
     height: 500px;
     transition: 0.8s ease-in-out;
 }
-@media (max-width: 1280px){
+@media (max-width: 680px){
     .container .card{
         height: fit-content;
     }
     
 }
-
-
 
 .cards{
     position: relative;
@@ -90,8 +88,6 @@
     margin-top: -40px;
     transition-delay: 0.3s;
 }
-
-
 
 
 .mobileContent{
