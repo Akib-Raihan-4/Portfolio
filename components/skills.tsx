@@ -11,7 +11,7 @@ interface SkillProps {
     y: any;   
   }
 
-  const Skill: React.FC<SkillProps> = ({ nam, x, y }) =>{
+const Skill: React.FC<SkillProps> = ({ nam, x, y }) =>{
     return(
         <motion.div className={`${styles.circleRest} font-semibold  text-white p-8  cursor-pointer`}
         whileHover={{scale:1.25}}
@@ -89,10 +89,10 @@ const DesktopSkills = () => {
             <Skill nam="OpenCV" x="-354px" y="-235px"/>
             <Skill nam="JAVA" x="115px" y="-345px"/>
             <Skill nam="MySQL" x="-405px" y="290px"/>
-            <Skill nam="SupaBase" x="-55px" y="415px"/>
+            <Skill nam="SupaBase" x="-55px" y="355px"/>
             <Skill nam="Django" x="473px" y="250px"/>
             <Skill nam="C++" x="-187px" y="-410px"/>
-    </div>
+        </div>
   )
 }
 
@@ -120,8 +120,10 @@ export const Skills = () => {
     <section className='mb-28 max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
         <div className='pt-[6rem] sm:pt-0 '></div>
         <SectionHeading>Skills</SectionHeading>
-        <div className='sm:pb-[4rem] '></div>
+        <div className='sm:pb-[6rem] '></div>
         {isMobile ? <MobileSkills /> : <DesktopSkills />}
+        
+        
     </section>
   )
 }
