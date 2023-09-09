@@ -4,7 +4,7 @@ import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import { useScroll, motion, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
-import styles from './project.module.css'
+import styles from './CSS/project.module.css'
 import { useMediaQuery } from 'react-responsive';
 
 type ProjectProps = (typeof projectsData)[number];

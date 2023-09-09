@@ -5,6 +5,9 @@ import {About} from '@/components/about';
 import Projects from '@/components/projects';
 import { AboutNew } from '@/components/aboutNew';
 import { Skills } from '@/components/skills';
+import { Experience } from '@/components/experience';
+import {Footer} from '@/components/footer';
+
 
 
 export default function Home() {
@@ -17,7 +20,9 @@ export default function Home() {
       <Projects/>
       <SectionDivider/>
       <Skills/>
-      
+      <SectionDivider/>
+      <Experience/>
+      <Footer/>
     </main>
   );
 }

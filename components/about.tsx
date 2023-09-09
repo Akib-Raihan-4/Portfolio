@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from './about.module.css'
+import styles from './CSS/about.module.css'
 import { motion } from 'framer-motion';
 import SectionHeading from './section-heading';
 

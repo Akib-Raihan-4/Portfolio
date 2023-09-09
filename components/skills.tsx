@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import React from 'react'
 import SectionHeading from './section-heading'
-import styles from './skills.module.css'
+import styles from './CSS/skills.module.css'
 import { motion } from 'framer-motion'
 
 interface SkillProps {
@@ -92,7 +92,7 @@ const DesktopSkills = () => {
             <Skill nam="SupaBase" x="-55px" y="415px"/>
             <Skill nam="Django" x="473px" y="250px"/>
             <Skill nam="C++" x="-187px" y="-410px"/>
-        </div>
+    </div>
   )
 }
 
@@ -120,10 +120,8 @@ export const Skills = () => {
     <section className='mb-28 max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
         <div className='pt-[6rem] sm:pt-0 '></div>
         <SectionHeading>Skills</SectionHeading>
-        <div className='sm:pb-[6rem] '></div>
+        <div className='sm:pb-[4rem] '></div>
         {isMobile ? <MobileSkills /> : <DesktopSkills />}
-        
-        
     </section>
   )
 }
