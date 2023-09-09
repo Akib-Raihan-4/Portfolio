@@ -17,8 +17,6 @@ export const ExperienceItem = ({
                 <div className={`${styles.image}`}>
                     <Image src={imageUrl} alt={title} quality={95}/>
                 </div>
-                
-               
                 <div className={`${styles.details}`}>
                     <div className={`${styles.center}`}>
                         <h1>{title}<br /></h1>

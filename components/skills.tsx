@@ -117,7 +117,7 @@ export const Skills = () => {
   }, []);
 
   return (
-    <section className='mb-28 max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
+    <section className=' max-w-[80rem] text-center leading-8 sm:mb-8 scroll-mt-28 overflow-x-hidden' id='skills'>
         <div className='pt-[6rem] sm:pt-0 '></div>
         <SectionHeading>Skills</SectionHeading>
         <div className='sm:pb-[6rem] '></div>
