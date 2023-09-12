@@ -6,6 +6,7 @@ import {BsArrowRight} from "react-icons/bs"
 import {HiDownload} from "react-icons/hi"
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import {SiGmail} from 'react-icons/si'
 import Image from 'next/image';
 
 
@@ -16,7 +17,7 @@ export default function Intro() {
     
 
     return (
-        <section className='mb-28 sm:max-w-[80rem] text-center sm:mb-0 scroll-mt-[100rem] flex' id='home'>
+        <section className='mb-28 sm:max-w-[85rem] text-center sm:mb-0 scroll-mt-[100rem] flex' id='home'>
             <div className='flex sm:flex-row flex-col-reverse justify-center items-center'>
                 <div className='w-full sm:w-[50%]  py-8 sm:py-0 flex justify-center'>
                     <motion.img
@@ -43,9 +44,9 @@ export default function Intro() {
                         <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-gray-200'
                         initial={{opacity:0, y:100}}
                         animate={{opacity:1, y:0}}>
-                            <span className="font-bold">Hello World, I am Akib Raihan.</span> I am interested in{" "}
-                            <span className="font-bold">full-stack web development</span> 
-                            . I enjoy building <span className="italic">sites & apps</span>. My focus is{" "}<span className="underline">React (Next.js)</span>.
+                            <span className="font-bold">Hello World, I am Akib Raihan,</span>a passionate{" "}
+                            <span className="font-bold">Full Stack Web Developer and AI/ML enthusiast</span> 
+                            . I find joy in buildings <span className="italic">Web apps & AI/ML Models</span>.
                         </motion.p>
                     </div>
         
@@ -70,15 +71,20 @@ export default function Intro() {
                         }}> 
                             Download CV<HiDownload className="opacity-50 group-hover:translate-y-1 group-hover:opacity-100" /> 
                         </motion.a>
-                        <div className='flex flex-row items-center justify-center gap-2 px-4 text-lg font-medium'>
-                            <a href="#" className='bg-white  text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none
+                        <div className='flex flex-row items-center justify-center gap-2 text-lg font-medium'>
+                            <a href="https://www.linkedin.com/in/akib-raihan04/" target='blank' className='bg-white  text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none
                             focus:scale-110  hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'> 
                                 <BsLinkedin/> 
                             </a>
-                            <a href="#" className='bg-white  text-gray-700 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none
+                            <a href="https://github.com/Akib-Raihan-4" target='blank' className='bg-white  text-gray-700 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none
                             focus:scale-[1.15]  hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'> 
                                 <FaGithub/> 
                             </a>
+                            <a href="https://github.com/Akib-Raihan-4" target='blank' className='bg-white  text-gray-700 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none
+                            focus:scale-[1.15]  hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'> 
+                                <SiGmail/> 
+                            </a>
+                            
                         </div>
                     </motion.div>
                 </div>

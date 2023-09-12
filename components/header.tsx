@@ -179,12 +179,12 @@ const MobileNav = () => {
 									className="list-none flex pl-[1.5rem] gap-x-4"
 								>
 									<li>
-                                        <a href="#" className=' text-white '> 
+                                        <a href="https://www.linkedin.com/in/akib-raihan04/" className=' text-white '> 
                                             <BsLinkedin size={30}/> 
                                         </a>
 									</li>
 									<li>
-                                        <a href="#" className=' text-white '> 
+                                        <a href="https://github.com/Akib-Raihan-4" className=' text-white '> 
                                             <FaGithub size={30}/> 
                                         </a>
 									</li>

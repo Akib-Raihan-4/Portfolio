@@ -13,20 +13,23 @@ export const About = () => {
             delay:0.4
         }} id='about'>
             <SectionHeading>About Me</SectionHeading>
-            <div className='pt-14 flex flex-col gap-10 sm:flex-row justify-between items-center'>
+            <div className='pt-14 flex flex-col gap-10 md:flex-row justify-between items-center'>
                 <div className='max-w-[50rem] sm:pr-[7rem] sm:pt-20 px-8'>
                         <p className={`font-sans mb-3 text-[1.2rem] text-white`}>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, nemo beatae magnam dolorem ab placeat unde nostrum, odio ipsum sint dolorum perspiciatis ex eos voluptate, nobis voluptatem quasi cum temporibus!
+                            My journey in the world of technology began with a simple fascination for coding, and it has evolved into a relentless pursuit of creating innovative solutions.
                         </p>
                         <p className={`font-sans mb-3 text-[1.2rem] text-white`}>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellendus a velit in vero corrupti laboriosam! Ex voluptates quasi earum molestias totam rem culpa, sequi, possimus animi repudiandae nam nesciunt!
+                            I thrive on the challenges of <span className='font-extrabold'>Full Stack Web Development</span> , where I blend creativity and technical expertise to craft exceptional digital experiences. My toolkit includes <span className='font-bold'>TypeScript, JavaScript, and Python</span> , and I'm well-versed in frameworks like <span className='font-bold'>Next.js, Django, and Node.js.</span>
+                        </p>
+                        <p className={`font-sans mb-3 text-[1.2rem] text-white`}>
+                            Beyond web development, I have a deep-rooted interest in <span className='font-extrabold'>Artificial Intelligence and Machine Learning.</span> I find immense joy in building AI/ML models and diving into data-driven problem-solving. I'm proficient in libraries such as <span className='font-bold'>TensorFlow, Keras, Scikit-learn,Nltk</span>  and essential data manipulation tools like  <span className='font-bold'>NumPy and Pandas</span>.
                         </p>
                 </div>
                 <div className={`${styles.box}`}>
                     <div className={`${styles.content} `}>
                             <img src="/AboutPic.png" alt=""  />
-                            <h2>Someone Famous <br /><span>Web Developer</span></h2>
-                            <a href="#">Hire Me</a>
+                            <h2>Akib Raihan <br /><span>Web Developer</span></h2>
+                            <a href="#contact">Hire Me</a>
                     </div>
                 </div>
                 
