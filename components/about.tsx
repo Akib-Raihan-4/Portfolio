@@ -28,7 +28,7 @@ export const About = () => {
                 <div className={`${styles.box}`}>
                     <div className={`${styles.content} `}>
                             <img src="/AboutPic.png" alt=""  />
-                            <h2>Akib Raihan <br /><span>Web Developer</span></h2>
+                            <h2>Akib Raihan <br /><span></span></h2>
                             <a href="#contact">Hire Me</a>
                     </div>
                 </div>
