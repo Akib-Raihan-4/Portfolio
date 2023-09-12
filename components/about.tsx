@@ -19,10 +19,10 @@ export const About = () => {
                             My journey in the world of technology began with a simple fascination for coding, and it has evolved into a relentless pursuit of creating innovative solutions.
                         </p>
                         <p className={`font-sans mb-3 text-[1.2rem] text-white`}>
-                            I thrive on the challenges of <span className='font-extrabold'>Full Stack Web Development</span> , where I blend creativity and technical expertise to craft exceptional digital experiences. My toolkit includes <span className='font-bold'>TypeScript, JavaScript, and Python</span> , and I'm well-versed in frameworks like <span className='font-bold'>Next.js, Django, and Node.js.</span>
+                            I thrive on the challenges of <span className='font-extrabold'>Full Stack Web Development</span> , where I blend creativity and technical expertise to craft exceptional digital experiences. My toolkit includes <span className='font-bold'>TypeScript, JavaScript, and Python</span> , and I&apos;m well-versed in frameworks like <span className='font-bold'>Next.js, Django, and Node.js.</span>
                         </p>
                         <p className={`font-sans mb-3 text-[1.2rem] text-white`}>
-                            Beyond web development, I have a deep-rooted interest in <span className='font-extrabold'>Artificial Intelligence and Machine Learning.</span> I find immense joy in building AI/ML models and diving into data-driven problem-solving. I'm proficient in libraries such as <span className='font-bold'>TensorFlow, Keras, Scikit-learn,Nltk</span>  and essential data manipulation tools like  <span className='font-bold'>NumPy and Pandas</span>.
+                            Beyond web development, I have a deep-rooted interest in <span className='font-extrabold'>Artificial Intelligence and Machine Learning.</span> I find immense joy in building AI/ML models and diving into data-driven problem-solving. I&apos;m proficient in libraries such as <span className='font-bold'>TensorFlow, Keras, Scikit-learn,Nltk</span>  and essential data manipulation tools like  <span className='font-bold'>NumPy and Pandas</span>.
                         </p>
                 </div>
                 <div className={`${styles.box}`}>
