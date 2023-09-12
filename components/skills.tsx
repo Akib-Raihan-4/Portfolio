@@ -27,7 +27,7 @@ const Skill: React.FC<SkillProps> = ({ nam, x, y }) =>{
 const skills = [
   'JavaScript',
   'CSS',
-  'HTM',
+  'HTML',
   'Python',
   'C++',
   'ReactJS',
@@ -37,6 +37,7 @@ const skills = [
   'Java',
   'MySQL',
   'Django',
+  'SupaBase',
 ];
 
 
