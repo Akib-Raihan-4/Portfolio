@@ -217,10 +217,13 @@
     opacity: 0;
     
 }
-.box:hover .content h2{
+.box:hover .content h2 {
     opacity: 1;
 }
 
+.box:hover .content a {
+    opacity: 1;
+}
 .content h2 span{
     font-weight: 300;
     font-size: 0.75em
@@ -238,10 +241,12 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
+    opacity: 0;
     
 }
 
 .content a:hover{
     letter-spacing: 0.2em;
+   
 }
 
