@@ -80,11 +80,9 @@ export default function Intro() {
                             focus:scale-[1.15]  hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'> 
                                 <FaGithub/> 
                             </a>
-                            <a href="https://github.com/Akib-Raihan-4" target='blank' className='bg-white  text-gray-700 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none
-                            focus:scale-[1.15]  hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'> 
-                                <SiGmail/> 
+                            <a href="mailto:raihanakib062@gmail.com" className='bg-white text-gray-700 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:bg-gray-300 hover:text-gray-950 active:scale-105 border-black/10 transition'>
+                                <SiGmail/>
                             </a>
-                            
                         </div>
                     </motion.div>
                 </div>
