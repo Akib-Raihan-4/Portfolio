@@ -5,10 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import EduBot from "@/public/EduBot.png";
 import Potato from "@/public/PotatoDisease.png"
 import Attendance from "@/public/Attendance.png"
-import Weather from "@/public/Weather.png"
+import CatWiki from "@/public/CatWiki.png"
 import Selfie from "@/public/MediaPic.png"
-import DevTech from "@/public/DevTech.png"
 import ADNdiginet from "@/public/ADNDiginet.webp"
+import UnSplash from "@/public/UnSplash.png"
 
 export const links = [
   {
@@ -51,13 +51,22 @@ export const experiencesData = [
 
 
 export const projectsData = [
+  
   {
-    title: "Edu Chatbot",
+    title: "Cat Wiki",
     description:
-      "EduBot is an AI-powered chatbot designed to provide instant and accurate responses to university student queries.",
-    tags: ["Python", "NLP", "NLTK ", "Keras", "Flask", "TensorFlow", "React"],
-    href: "https://github.com/Akib-Raihan-4/EduBot",
-    imageUrl: EduBot,
+      "Here you can learn about cat breeds and the data are fetched from a Cat API. One can search cat breeds and know about the breeds and also see their images.",
+    tags: ["NextJS", "Tailwind", "Firebase", "CSS"],
+    href: "https://cat-wiki-akib.vercel.app",
+    imageUrl: CatWiki,
+  },
+  {
+    title: "UnSplash Gallery",
+    description:
+      "A gallery where you can add images through links and one can search specific images with it's name, and also delete.",
+    tags: ["React", "NodeJS", "CSS", "ExpressJS", "Tailwind", "MongoDB Atlas"],
+    href: "https://un-splash-gallery.vercel.app",
+    imageUrl: UnSplash,
   },
   {
     title: "Potato Plant Disease Detection",
@@ -76,12 +85,12 @@ export const projectsData = [
     imageUrl: Attendance,
   },
   {
-    title: "Weather App",
+    title: "Edu Chatbot",
     description:
-      "A simple Weather app that also shows the next 3 days' forecast. In this project I have use HTML, CSS and JS and also used a weather API.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    href: "https://github.com/Akib-Raihan-4/Simple-Weather-App",
-    imageUrl: Weather,
+      "EduBot is an AI-powered chatbot designed to provide instant and accurate responses to university student queries.",
+    tags: ["Python", "NLP", "NLTK ", "Keras", "Flask", "TensorFlow", "React"],
+    href: "https://github.com/Akib-Raihan-4/EduBot",
+    imageUrl: EduBot,
   },
   {
     title: "Taking Picture with Hand Gesture",
@@ -91,13 +100,6 @@ export const projectsData = [
     imageUrl: Selfie,
     href: "https://github.com/Akib-Raihan-4/Taking-Picture-Using-MediaPipe"
   },
-  {
-    title: "DevTech",
-    description:
-      "So here I used the MediaPipe Library in Python to develop a simple task of taking pictures using a webcam.",
-    tags: ["PHP", "TailwindCSS", "HTML", "CSS", "MySQL"],
-    href: "https://github.com/Akib-RaihanPop/DevTech.github.io",
-    imageUrl: DevTech,
-  },
+  
 ] as const;
 
