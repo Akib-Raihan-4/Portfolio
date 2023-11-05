@@ -165,10 +165,10 @@
 
     /* w-80 flex overflow-x-auto py-4 overflow-hidden scrollbar-hide  */
 
-.skillDiv{
-  scroll-snap-type: x mandatory;
+/* .skillDiv{
+  scroll-snap-type: ;
 }
 
 .scrollSnap{
   scroll-snap-align: center;
-}
+} */

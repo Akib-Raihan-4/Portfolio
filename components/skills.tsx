@@ -45,16 +45,16 @@ const skills = [
 
 const MobileSkills = () => {
   return (
-    <div className="py-12">
-      <div className="flex justify-center">
+    <div className={`py-12 `}>
+      <div className={`flex justify-center `}>
         <div className={`w-80 flex overflow-x-auto py-4 overflow-hidden scrollbar-hide ${styles.skillDiv} `}>
           {skills.map((skill, index) => (
             <div
               key={index}
               className={`bg-gray-900 rounded-full text-center m-2 ${styles.scrollSnap}`}
             >
-              <div className="w-80 h-80 bg-gray-900 rounded-full">
-                <div className={`${styles.ball} ${styles.bubble} pt-12`}>
+              <div className={`w-80 h-80 bg-gray-900 rounded-full  ${styles.scrollSnap} `}>
+                <div className={`${styles.ball} ${styles.bubble} pt-12 `}>
                   <div className={`${styles.skillContent} pt-14`}>{skill}</div>
                 </div>
               </div>
